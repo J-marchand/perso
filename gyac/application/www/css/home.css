@@ -1,5 +1,26 @@
 /*** SECTION ***/
-
+.home_section
+{
+    min-height: 100vh;
+}
+.home_section img
+{
+    filter: grayscale(100%);
+    
+    width: 100%;    
+}
 /*** ARTCILE ***/
-/** 1 **/
-/** 2 **/
+.home_section_article-teacher,
+.home_section_article-student
+{
+    width: 45%
+}
+
+.home_section_article-teacher_img,
+.home_section_article-student_img
+{
+    margin: 35% 0;
+}
+/** teacher **/
+/** student **/
+
