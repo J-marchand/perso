@@ -1,0 +1,54 @@
+<div class="container">
+    <form class="main_form_subscribe" action="subscribe.php" method="POST">
+
+        <fieldset id="first_fieldset">
+            <legend class="main_form_subscribe_legend uppercase">1ere étape</legend>
+            <div class="main_form_subscribe_first-step">
+
+                <label>Je veux :</label>
+
+                <div class="min_height">
+                    <div class="group_radio">
+                        <div class="inputGroup">
+                            <input id="radio1" name="radio" type="radio" value="teacher"/>
+                            <label for="radio1">Donner un cours</label>
+                        </div>
+                        <div class="inputGroup">
+                            <input id="radio2" name="radio" type="radio" value="student"/>
+                            <label for="radio2">Réserver un cours</label>
+                        </div>
+                    </div>
+
+                    <div class="group_mail">
+                        <label>Mon mail :</label> 
+                        <input type="email" name="subscribe_mail" placeholder="@mail">
+                    </div>
+                </div>
+                <a id="subscribe_do-move" class="uppercase normal-link" href="">suivant</a>
+            </div>
+        </fieldset>
+
+        <fieldset id="second_fieldset" class="hide">
+            <legend class="main_form_subscribe_legend uppercase">2eme etape</legend>
+            
+
+            <div class="min_height">
+                <div class="main_form_subscribe_second-step">
+
+                    <label>Mon prenom</label>
+                    <input type="text" name="subscribe_firstName" placeholder="Prénom">
+
+                    <label>Mon Nom</label>
+                    <input type="text" name="subscribe_lastName" placeholder="Nom">
+
+                    <label>Choisissez un mot de passe</label>
+                    <input type="password" name="subscribe_password" placeholder="Mot de passe">
+                    
+                    <button class="uppercase" type="submit">valider</button>
+                </div>
+            </div>
+            <a class="normal-link" id="come_back" href=""><i class="fas fa-arrow-left"></i></a>
+        </fieldset>
+    </form>
+</div>
+<script src="js/subscribe/subscribe_move.js"></script>

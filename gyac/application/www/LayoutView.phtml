@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Give you a Chance ! // Acceuil</title>
+    <link rel="stylesheet" href="<?= $wwwUrl ?>/css/normalize-3.0.3.min.css">
+    <link rel="stylesheet" href="<?= $wwwUrl ?>/css/font-awesome-4.3.0.min.css">
+
+    <!-- Feuilles de styles de l'application -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Karla">
+
+    <!-- Feuilles de styles d'auto-class -->
+    <link rel="stylesheet" href="<?= $wwwUrl ?>/css/auto-class.css">
+
+    <!-- Feuilles de styles -->
+    <link rel="stylesheet" href="<?= $wwwUrl ?>/css/layout.css">
+
+    <!-- Librairie jQuery -->
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+
+    <!-- JavaScript de l'application -->
+    <script src="<?= $wwwUrl ?>/js/utilities.js"></script>
+</head>
+    <body>
+
+        <header id="header" class="layout_header <?php echo ?>">
+            <nav class="layout_header_bloc-nav fl-jc-b ud-p-20 bg-c-black">
+                <div class="layout_header_bloc_left">
+                    <ul class="layout_header_bloc_left_list">
+                        <li><a class=" normal-list normal-link p-20" href="">Give You A Chance</a></li>
+                        <li><a class ="uppercase normal-list normal-link p-20" href="">boutique</a></li>
+                        <li><a class ="uppercase normal-list normal-link p-20" href="">contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="layout_header_bloc_right">
+                    <ul class="layout_header_bloc_right_list">
+                        <li><a class ="uppercase normal-list normal-link p-20" href="">connexion</a></li>
+                        <li><a class ="uppercase normal-list normal-link p-20" href="">inscription</a></li>
+                        <li><a class ="uppercase normal-list normal-link p-20" href="">deconnexion</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <div class="layout_header_bloc-info container">
+                <h1 class="uppercase t-a-center bold ud-p-20">accordez-vous une chance</h1>
+                <p class="uppercase t-a-center bold ud-p-20">avec give you a chance, donnez ou recevez un cours de sport entre particulier a domicile ou proche de chez vous.</p>
+                <a class="uppercase normal-link t-a-center ud-p-20 bg-c-black c-white" href="">en savoir plus</a>
+            </div>
+        </header>
+
+        <main>
+            <?php include $this->viewData['template'] ?>
+        </main>
+
+        <!-- Pied de page commun -->
+        <footer>
+            
+        </footer>
+
+        <!-- Code principal JavaScript de l'application -->
+        <script src="<?= $wwwUrl ?>/js/main.js"></script>
+
+    </body>
+</html>

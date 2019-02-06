@@ -1,0 +1,730 @@
+/**************************** ALL *******************************/
+
+.hide
+{
+    display: none;
+}
+.container
+{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.normal-link
+{
+    text-decoration: none;
+    color: black;
+}
+
+.normal-list
+{
+    list-style: none;
+}
+.uppercase
+{
+    text-transform: uppercase;
+}
+.t-a-center
+{
+    text-align: center;
+}
+.clear
+{
+    clear: both;
+}
+
+h1
+{
+    font-family: 'Open Sans', sans-serif;
+}
+h2
+{
+    font-family: 'Fira Mono', monospace;
+}
+h3
+{
+    font-family: 'Hind Vadodara', sans-serif;
+}
+p
+{
+    font-family: 'Hind Vadodara', sans-serif;
+}
+
+
+/*********************** HEADER ***************************/
+.index .header
+{
+    height: 100vh;
+    background-image: url(../img/bg-index.jpg);
+    filter: grayscale(100%);
+    background-size: cover;
+}
+
+.header
+{
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+}
+
+/* bloc */
+
+.header_bloc
+{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+    
+    min-height: 50px;
+
+    position: fixed;
+    z-index: 100;
+}
+
+
+/* left */
+.header_left_nav ul
+{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.header_left_nav_list li
+{
+    list-style: none;    
+}
+
+.header_left_nav_list a
+{
+    padding:  15px 30px;
+}
+
+.header_left_nav_list a:hover
+{
+    color: #C6CBD1;
+    background-color: black;
+}
+
+/* right */
+
+.header_right ul
+{
+    display: flex;
+}
+
+.header_right li
+{
+    list-style: none;
+}
+
+.header_right a 
+{
+    padding: 15px 30px;
+    background-color: black;
+    color: #C6CBD1;
+}
+
+.header_right a:hover
+{
+    background-color: white;
+    color: black;
+}
+
+.bloc_connexion
+{
+    position: fixed;
+    top: 50px;
+    right: 0;
+
+
+    width: 311px;
+    min-height: 200px;
+    padding: 20px;
+
+    z-index: 100;
+
+    display: flex;
+    flex-direction: column;
+    
+
+    background-color: white;
+}
+
+.bloc_connexion label
+{
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.bloc_connexion input
+{
+    float: right;
+    margin-bottom: 10px;
+
+    border-radius: 5px;
+}
+
+.bloc_connexion button
+{
+    width: 50%;
+    margin-top: 10px;
+
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.bloc_connexion button p
+{
+    margin: 10px 0;
+}
+
+
+
+
+/************************************* MAIN ***********************************/
+/* section 1 */
+.main_section-1
+{
+    padding: 400px 0;
+    text-align: center;
+}
+
+.main_section-1 h1
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3em;
+
+    padding-top: 50px;
+
+    position: relative;
+    bottom: 280px;
+}
+
+.main_section-1 p
+{
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 1.5em;
+
+    position: relative;
+    bottom: 280px;
+    margin-bottom: 40px;
+}
+
+.main_section-1 a
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+
+    position: relative;
+    bottom: 280px;
+    padding: 10px 20px;
+
+    color: #C6CBD1;
+    background-color: black; 
+}
+
+
+/* section 2 */
+.main_section-2
+{
+padding: 50px 0;
+}
+
+/* section 2 article 1 */
+.main_section-2_article-1
+{
+    padding-bottom: 100px;
+}
+
+.main_section-2_article-1 img
+{
+    position: relative;
+    right: 15%;
+    width: 60%;
+
+    filter: grayscale(100%);
+}
+
+.main_section-2_article-1_teacher
+{
+    float: right;
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main_section-2_article-1_teacher h2
+{
+    font-size: 3em;
+}
+
+.main_section-2_article-1_teacher p
+{
+    font-size: 2em;
+}
+
+.main_section-2_article-1_teacher a
+{
+    padding: 20px;
+    width: 70%;
+
+    background-color: black;
+    color: #C6CBD1;
+    font-size: 2em;
+}
+/* section 2 article 2 */
+.main_section-2_article-2
+{
+    padding-bottom: 100px;
+}
+
+.main_section-2_article-2 img
+{
+    position: relative;
+    left: 15%;
+    width: 60%;
+
+    filter: grayscale(100%);
+}
+
+.main_section-2_article-2_student
+{
+    float: left;
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main_section-2_article-2_student h2
+{
+    font-size: 3em;
+}
+
+.main_section-2_article-2_student p
+{
+    font-size: 2em;
+}
+
+.main_section-2_article-2_student a
+{
+    padding: 20px;
+    width: 70%;
+
+    background-color: black;
+    color: #C6CBD1;
+    font-size: 2em;
+}
+
+/* SECTION 3*/
+.main_section-3
+{
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 100px;
+}
+
+/* section 3 article 1 */
+/* section 3 article 2 */
+
+.main_section-3_article-1,
+.main_section-3_article-2
+{
+    width: 35%;
+    padding: 20px 50px;
+
+    border: 2px solid #C6CBD1;
+}
+
+.main_section-3_article-1 h1,
+.main_section-3_article-2 h1
+{
+    padding: 20px 0;
+    font-size: 2.5em;
+}
+
+.main_section-3_article-1 p,
+.main_section-3_article-2 p
+{
+    font-size: 1.5em;
+}
+
+.main_section-3_article-1 a,
+.main_section-3_article-2 a
+{
+    width: 100%;
+    margin: 20px auto;
+    padding: 30px 0;
+    display: inline-block;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+
+    background-color: black;
+    color: #C6CBD1;
+}
+
+.separateur
+{
+    min-height: 550px;
+}
+
+/************************* FORM ***************************/
+
+
+.main_form_subscribe_first-step,
+.main_form_subscribe_second-step
+{
+    min-height: 500px;
+    padding: 50px;
+}
+
+
+.main_form_subscribe
+{
+    padding: 200px 0 200px 0;
+}
+
+.main_form_subscribe_legend
+{
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main_form_subscribe_first-step
+{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;  
+}
+
+.main_form_subscribe_first-step label{
+    font-size: 2em;
+    padding-bottom: 20px; 
+    font-family: 'Hind Vadodara', sans-serif;
+}
+
+.main_form_subscribe_first-step input
+{
+    width: 80%;
+    margin: 0 auto 20px auto;
+    border-radius: 5px;
+    padding: 10px 0 10px 0;
+}
+.main_form_subscribe_first-step input::placeholder
+{
+    padding-left: 20px;
+}
+
+
+/* Groupe radio */
+.min_height
+{
+    min-height: 300px;;
+}
+
+.group_radio
+{
+    padding-bottom: 30px;
+}
+.inputGroup {
+    background-color: rgba(154, 163, 172, 0.2);
+    display: block;
+    margin: 10px auto;
+    position: relative;
+    width: 80%;
+  }
+  .inputGroup label {
+    padding: 12px 30px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    text-align: left;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 700ms ease-in;
+    overflow: hidden;
+  }
+  .inputGroup label:before {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    content: '';
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale3d(1, 1, 1);
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    z-index: -1;
+  }
+  .inputGroup label:after {
+    width: 32px;
+    height: 32px;
+    content: '';
+    border: 2px solid #d1d7dc;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+    background-repeat: no-repeat;
+    background-position: 2px 3px;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all 200ms ease-in;
+  }
+  .inputGroup input:checked ~ label {
+    color: #fff;
+  }
+  .inputGroup input:checked ~ label:before {
+    transform: translate(-50%, -50%) scale3d(56, 56, 1);
+    opacity: 1;
+  }
+  .inputGroup input:checked ~ label:after {
+    background-color: black;
+    border-color: white;
+  }
+  .inputGroup input {
+    width: 32px;
+    height: 32px;
+    order: 1;
+    z-index: 2;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    visibility: hidden;
+  }
+
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  html {
+    box-sizing: border-box;
+  }
+  code {
+    background-color: #9aa3ac;
+    padding: 0 8px;
+  }
+  
+
+/******/
+
+
+
+.main_form_subscribe_first-step a
+{
+    padding: 10px 0 10px 0;
+    border: 2px solid black;
+    width: 20%;
+    margin: 30px auto 20px auto;
+    
+    color: white;
+    background-color: black
+}
+
+/* second step */
+
+.main_form_subscribe_second-step
+{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    color: black; 
+}
+
+.main_form_subscribe_second-step label
+{
+    font-size: 2em;
+    padding-bottom: 20px; 
+    font-family: 'Hind Vadodara', sans-serif;
+}
+
+.main_form_subscribe_second-step input
+{
+    width: 80%;
+    margin: 0 auto 20px auto;
+    border-radius: 5px;
+    padding: 10px 0 10px 0;
+}
+.main_form_subscribe_second-step input::placeholder
+{
+    padding-left: 20px;
+}
+
+.main_form_subscribe_second-step button
+{
+    padding: 10px 0 10px 0;
+    border: 2px solid black;
+    width: 20%;
+    margin: 30px auto 20px auto;
+    
+    color: white;
+    background-color: black
+}
+
+/************ FORM LOGIN **********/
+
+.main_form_login
+{
+    padding: 200px 0 200px 0;
+}
+
+.bloc_connexion_login
+{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.bloc_connexion_login label
+{
+    font-size: 2em;
+    padding-bottom: 20px; 
+    font-family: 'Hind Vadodara', sans-serif;
+}
+
+.bloc_connexion_login input
+{
+    width: 80%;
+    margin: 0 auto 20px auto;
+    border-radius: 5px;
+    padding: 10px 0 10px 0;
+}
+
+
+
+.bloc_connexion_mail,
+.bloc_connexion_psw
+{
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    padding: 30px;
+}
+
+.bloc_connexion_login button
+{   
+    border: 2px solid black;
+    width: 20%;
+    margin: 30px auto 20px auto;
+    color: white;
+    background-color: black;
+    display: block;
+}
+
+/******** ADMIN STUDENT ********/
+
+/* nav */
+
+.admin-student_nav 
+{
+    width: 100%;
+    padding-top: 50px;
+    min-height: 30px;
+
+    background-color: #9aa3ac61;
+}
+
+.admin-student_nav .container ul
+{
+    display: flex;
+
+    margin: auto 0;
+    padding: 10px;
+}
+
+.admin-student_nav li
+{
+    width: 10%;
+}
+
+/* section 1 */
+.admin-student_compte p
+{
+    line-height: 10px;
+}
+.admin-student_compte a
+{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+
+    display: block;
+    width: 10%;
+
+    margin-top: 10px;
+    padding: 1px 0;
+}
+
+/* section 2 */
+
+/* select */
+
+.admin-student_select {
+    display: block;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+    padding: .6em 1.4em .5em .8em;
+    width: 100%;
+    max-width: 100%; 
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: .5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+      linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+}
+.admin-student_select::-ms-expand {
+    display: none;
+}
+.admin-student_select:hover {
+    border-color: #888;
+}
+.admin-student_select:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222; 
+    outline: none;
+}
+.admin-student_select option {
+    font-weight:normal;
+}
+
+
+
+/* FOOTER */    
+    
