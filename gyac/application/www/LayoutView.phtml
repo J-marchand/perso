@@ -36,19 +36,17 @@
 
                 <div class="layout_header_bloc_right">
                     <ul class="layout_header_bloc_right_list">
-                        <li><a class ="uppercase normal-list normal-link p-20" href="">connexion</a></li>
-                        <li><a class ="uppercase normal-list normal-link p-20" href="">inscription</a></li>
-                        <li><a class ="uppercase normal-list normal-link p-20" href="">deconnexion</a></li>
+
+                        <?php if($_SESSION != true): ?>
+                            <li><a class ="uppercase normal-list normal-link p-20" href="">connexion</a></li>
+                            <li><a class ="uppercase normal-list normal-link p-20" href="">inscription</a></li>
+                        <?php endif ?>
+                        <?php if($_SESSION == true): ?>
+                            <li><a class ="uppercase normal-list normal-link p-20" href="">deconnexion</a></li>
+                        <?php endif ?>
                     </ul>
                 </div>
             </nav>
-            
-            <div class="layout_header_bloc-info container">
-                <h1 class="uppercase t-a-center bold ud-p-20">accordez-vous une chance</h1>
-                <p class="uppercase t-a-center bold ud-p-20">avec give you a chance, donnez ou recevez un cours de sport entre particulier a domicile ou proche de chez vous.</p>
-                <a class="uppercase normal-link t-a-center ud-p-20 bg-c-black c-white" href="">en savoir plus</a>
-            </div>
-        </header>
 
         <main>
             <?php include $this->viewData['template'] ?>

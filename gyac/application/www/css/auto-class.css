@@ -42,16 +42,6 @@
 }
 
 /*** DECORATION ***/
-
-.bg-c-/*color-name*/
-{
-    background-color: /*color*/;
-}
-.c-/*name-color*/
-{
-    color: /*color*/;
-}
-
 .bg-c-white
 {
     background-color: white;
@@ -63,6 +53,10 @@
 .c-white
 {
     color: white;
+}
+.c-black
+{
+    color: black;
 }
 /*** PADDING ***/
 .p-10
@@ -93,7 +87,7 @@
 
 .p-50
 {
-    padding: 20px;
+    padding: 50px;
 }
 .ud-p-50
 {
@@ -102,6 +96,20 @@
 .lr-p-50
 {
     padding: 0 50px;
+}
+
+/*** MARGIN ***/
+.m-50
+{
+    margin: 50px;
+}
+.ud-m-50
+{
+    margin: 50px 0;
+}
+.lr-m-50
+{
+    margin: 0 50px;
 }
 
 /*** FLEX ***/

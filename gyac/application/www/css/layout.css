@@ -1,15 +1,4 @@
 /*** HEADER ***/
-/* BLOC */
-.layout_header
-{
-    background-image: url(../images/bg/bg-layout.jpg);
-    background-size: 100%;
-    filter: grayscale(100%);
-    background-position-y: -120px;
-
-    min-height: 100vh;
-}
-
 .layout_header_bloc-nav li
 {
     display: inline;
