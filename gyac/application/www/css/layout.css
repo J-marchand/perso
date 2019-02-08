@@ -1,0 +1,33 @@
+/*** HEADER ***/
+.layout_header_bloc-nav li
+{
+    display: inline;
+}
+
+/* :HOVER */
+
+.layout_header_bloc-nav a:hover
+{
+    background-color: white;
+    color: black;
+}
+
+.layout_header_bloc-nav a
+{
+    color: white;
+}
+/* GAUCHE */
+/* DROITE */
+
+/* INFO */
+.layout_header_bloc-info
+{
+    padding-top: 150px;
+}
+.layout_header_bloc-info a 
+{
+    display: block;
+
+    width: 15%;
+    margin: 20px auto;
+}

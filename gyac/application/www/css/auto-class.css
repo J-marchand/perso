@@ -1,0 +1,138 @@
+/*** WEBKIT CORRECT ***/
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.d-show
+{
+    display: none;
+}
+
+/*** CONTAINER ***/
+.container
+{
+    width: 70%;
+    margin: 0 auto;
+}
+/*** TEXT ***/
+.normal-link
+{
+    text-decoration: none;
+}
+.normal-list
+{
+    list-style-type: none;
+}
+.uppercase
+{
+    text-transform: uppercase;
+}
+.bold
+{
+    font-weight: bold;
+}
+.t-a-center
+{
+    text-align: center;
+}
+.t-a-left
+{
+    text-align: left;
+}
+.t-a-left
+{
+    text-align: right;
+}
+
+/*** DECORATION ***/
+.bg-c-white
+{
+    background-color: white;
+}
+.bg-c-black
+{
+    background-color: black;
+}
+.c-white
+{
+    color: white;
+}
+.c-black
+{
+    color: black;
+}
+/*** PADDING ***/
+.p-10
+{
+    padding: 10px;
+}
+.ud-p-10
+{
+    padding: 10px 0;
+}
+.lr-p-10
+{
+    padding: 0 10px;
+}
+
+.p-20
+{
+    padding: 20px;
+}
+.ud-p-20
+{
+    padding: 20px 0;
+}
+.lr-p-20
+{
+    padding: 0 20px;
+}
+
+.p-50
+{
+    padding: 50px;
+}
+.ud-p-50
+{
+    padding: 50px 0;
+}
+.lr-p-50
+{
+    padding: 0 50px;
+}
+
+/*** MARGIN ***/
+.m-50
+{
+    margin: 50px;
+}
+.ud-m-50
+{
+    margin: 50px 0;
+}
+.lr-m-50
+{
+    margin: 0 50px;
+}
+
+/*** FLEX ***/
+.fl-jc-b
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fl-jc-a
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+

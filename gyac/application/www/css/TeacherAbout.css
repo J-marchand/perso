@@ -1,0 +1,45 @@
+/*** SECTION ***/
+p
+{
+    line-height: 1.5em;
+}
+/* PARA */
+.para1
+{
+    width: 100%;
+}
+/* 1 */
+.text1
+{
+    float: left;
+    width: 40%;
+}
+.img1
+{
+    float: right;
+    width: 40%;
+}
+
+.img1 img
+{
+    width: 100%;
+    filter: grayscale(90%);
+}
+/* 2 */
+.text2
+{
+    float: right;
+    width: 40%;
+}
+.img2
+{
+    float: left;
+    width: 40%;
+}
+
+.img2 img
+{
+    width: 100%;
+    filter: grayscale(90%);
+}
+

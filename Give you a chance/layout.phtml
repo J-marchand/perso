@@ -1,0 +1,97 @@
+<!--
+font-family: 'Open Sans', sans-serif; h1
+font-family: 'Fira Mono', monospace; h2
+font-family: 'Hind Vadodara', sans-serif; p
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono:700|Hind+Vadodara|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.css">
+
+    
+    <title>Document</title>
+</head>
+<body class="<?php echo $template?>">
+    <header class="header">
+        <div class="header_bloc">
+            <div class="header_left">
+                <nav class="header_left_nav">
+                    <ul class="header_left_nav_list">
+                        <li><a class="normal-link" href="index.php">Give You A Chance</a></li>
+                        <li><a class="normal-link uppercase" href="#">donner un cours</a></li>
+                        <li><a class="normal-link uppercase" href="#">réserver un cours</a></li>
+                        <li><a class="normal-link uppercase" href="#">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header_right">
+                <ul>
+
+                    <?php if($_SESSION == null): ?>
+                        <li>
+                            <a class="normal-link uppercase" href="subscribe.php">inscription</a>
+                        </li>
+                        <li>
+                            <a id="connexion" class="normal-link uppercase" href="#">connexion</a>
+                        </li>
+                    <?php endif ?>
+
+
+                    <?php if($_SESSION != null): ?>
+                        <li>
+                            <a class="uppercase normal-link" href="destroy.php">deconnexion</a>
+                        </li>
+                    <?php endif ?>
+                </ul>
+            </div>
+        </div>
+        
+        <?php if ($template == 'index'): ?>
+            <section class="main_section-1">
+
+                <div class="container">
+                    <h1 class="uppercase">accordez vous une chance</h1>
+
+                    <p>Avec give you a chance, donnez ou recevez un cours de sport entre particulier a domicile ou proche de chez vous.</p>
+
+                    <a class="normal-link uppercase" href="#about">en savoir plus</a>
+                </div>
+
+            </section>
+        <?php endif ?>
+    </header>
+
+    <div id="connexion_view" class="hide">
+
+        
+            <form class="bloc_connexion" action="login.php" method="POST">
+            <h2>Connectez-vous</h2>
+                <label>Saisissez votre mail</label>
+                <input type="text" name="mail" placeholder="@Mail">
+                
+
+                <label>Mot de passe</label>
+                <input type="password" name="password" placeholder="Mot de passe">
+                
+                <button class="uppercase" type="submit"><p>connexion</p></button>
+            </form>
+    </div>
+
+    <main class="main">
+        
+            <?php include $template.'.phtml' ?>
+        
+    </main>
+
+    <footer></footer>
+    <script src="js/connexion/connexion.js"></script>
+</body>
+</html>

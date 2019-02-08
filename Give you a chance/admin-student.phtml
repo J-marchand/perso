@@ -1,0 +1,57 @@
+<?php if($_SESSION == true): ?>
+
+    <nav class="admin-student_nav">
+        <div class="container">
+            <ul class="normal-list">
+                <li><a id="admin-student_compte" class="normal-link" href="#"><p>Mon compte</p></a></li>
+                <li><a id="admin-student_cours" class="normal-link" href="#"><p>Mes cours</p></a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <section id="admin-student_hide1" class="admin-student_compte">
+            <h1 class="t-a-center">Mon compte</h1>
+            <h3>Mes infos</h3>
+
+            <ul class="normal-list">
+                <li><p>Nom : <?= $_SESSION['lastName'] ?></p></li>
+                <li><p>Prenom : <?= $_SESSION['firstName'] ?></p></li>
+                <li><p>Adress mail : <?= $_SESSION['email'] ?></p></li>
+                <li><p>Votre statut : <?= $_SESSION['category'] ?></p></li>
+                <li><a class="normal-link uppercase" id="change_info" href="#"><p>modifier</p></a></li>
+            </ul>
+
+            <h3>Modifier mes infos</h3>
+
+
+
+        </section>
+    </div>
+
+
+    <div class="container">
+        <section id="admin-student_hide2" class="admin-student_compte">
+            <h1 class="t-a-center">Mes cours</h1>
+            <form action="admin-student">
+                <select class="admin-student_select">
+                    <option>Choisissez un sport</option>
+                    <option>Tennis</option>
+                    <option>Surf</option>
+                    <option>Course a pied</option>
+                    <option>Football</option>
+                </select>
+            </form>
+        </section>
+    </div>
+
+<?php elseif($_SESSION != true): ?>
+
+    <?php 
+        header('Location: login.php');
+        exit();
+    ?>
+
+<?php endif ?>
+

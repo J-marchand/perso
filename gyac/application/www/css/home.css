@@ -1,0 +1,70 @@
+/*** HEADER ***/
+/* BLOC */
+.layout_header
+{
+    background-image: url(../images/bg/bg-layout.jpg);
+    background-size: 100%;
+    filter: grayscale(100%);
+    background-position-y: -80px;
+
+    min-height: 100vh;
+}
+
+/*** SECTION ***/
+.home_section
+{
+    min-height: 100vh;
+}
+.home_section img
+{
+    filter: grayscale(100%);
+    
+    width: 100%;    
+}
+/*** ARTCILE ***/
+.home_section_article-teacher,
+.home_section_article-student
+{
+    width: 45%
+}
+
+.home_section_article-teacher_img,
+.home_section_article-student_img
+{
+    margin: 35% 0;
+}
+
+.home_section_article-teacher_about a,
+
+/* OVERLAY */
+.touch:hover .home_section_article-teacher_about,
+.touch:hover .home_section_article-student_about
+{
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+.touch:hover .img_about
+{
+    opacity: 0.5;
+    transition-duration: 1s;
+}
+
+.home_section_article-teacher_about,
+.home_section_article-student_about
+{
+    opacity: 0;
+
+    position: relative;
+    top: -250px;
+}
+
+.home_section_article-teacher_about a,
+.home_section_article-student_about a
+{
+    position: relative;
+    top: 50px;
+}
+/** teacher **/
+/** student **/
+
