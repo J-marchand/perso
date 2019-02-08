@@ -1,0 +1,36 @@
+/*** SPACE ***/
+
+
+/*** SPACE FORM ***/
+.register-space
+{
+    margin: 50px 0;
+}
+
+/*** FORM ***/
+
+.form_min-height
+{
+    min-height: 100px;
+}
+
+/*** LEFT ***/
+.left
+{
+    width: 30%;
+    filter: invert(1);
+}
+.left img
+{
+    width: 100%;
+    padding: 0 auto;
+}
+/*** RIGHT ***/
+.right
+{
+    width: 70%;
+}
+/* STEP 1 */
+
+/* STEP 2 */
+/* STEP 3 */

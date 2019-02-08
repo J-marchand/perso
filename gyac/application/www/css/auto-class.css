@@ -5,6 +5,16 @@
     padding: 0;
 }
 
+.clear
+{
+    clear: both;
+}
+
+.d-show
+{
+    display: none;
+}
+
 /*** CONTAINER ***/
 .container
 {

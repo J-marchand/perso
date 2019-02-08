@@ -28,7 +28,7 @@
             <nav class="layout_header_bloc-nav fl-jc-b ud-p-20 bg-c-black">
                 <div class="layout_header_bloc_left">
                     <ul class="layout_header_bloc_left_list">
-                        <li><a class=" normal-list normal-link p-20" href="">Give You A Chance</a></li>
+                        <li><a class=" normal-list normal-link p-20" href="<?= $requestUrl ?>/">Give You A Chance</a></li>
                         <li><a class ="uppercase normal-list normal-link p-20" href="">boutique</a></li>
                         <li><a class ="uppercase normal-list normal-link p-20" href="">contact</a></li>
                     </ul>
@@ -37,13 +37,13 @@
                 <div class="layout_header_bloc_right">
                     <ul class="layout_header_bloc_right_list">
 
-                        <?php if($_SESSION != true): ?>
+                        
                             <li><a class ="uppercase normal-list normal-link p-20" href="">connexion</a></li>
-                            <li><a class ="uppercase normal-list normal-link p-20" href="">inscription</a></li>
-                        <?php endif ?>
-                        <?php if($_SESSION == true): ?>
+                            <li><a class ="uppercase normal-list normal-link p-20" href="<?= $requestUrl ?>/user/register">inscription</a></li>
+                        
+                        
                             <li><a class ="uppercase normal-list normal-link p-20" href="">deconnexion</a></li>
-                        <?php endif ?>
+                        
                     </ul>
                 </div>
             </nav>

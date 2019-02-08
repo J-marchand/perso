@@ -5,7 +5,7 @@
     background-image: url(../images/bg/bg-layout.jpg);
     background-size: 100%;
     filter: grayscale(100%);
-    background-position-y: -120px;
+    background-position-y: -80px;
 
     min-height: 100vh;
 }
