@@ -1,6 +1,9 @@
 /*** SPACE ***/
-
-
+.register-space_form
+{
+    min-height: 650px;
+    width: 100%;
+}
 /*** SPACE FORM ***/
 .register-space
 {
@@ -8,29 +11,40 @@
 }
 
 /*** FORM ***/
-
-.form_min-height
+.register_form
 {
-    min-height: 100px;
+    width: 70%;
+}
+.register_form fieldset
+{
+    border: 2px solid black;  
+    border-radius: 5px;
+    min-height: 550px;  
 }
 
 /*** LEFT ***/
 .left
 {
     width: 30%;
-    filter: invert(1);
+    margin: auto 0;
 }
 .left img
 {
-    width: 100%;
-    padding: 0 auto;
+    width: 100%; 
+}
+.left a
+{
+    display: block;
+
+    width: 40%;
+    margin: 50px auto;
+
+    border: 2px solid white;
 }
 /*** RIGHT ***/
-.right
-{
-    width: 70%;
-}
 /* STEP 1 */
-
+.register-space_form_step-one
+{
+    min-height: 100%;
+}
 /* STEP 2 */
-/* STEP 3 */
