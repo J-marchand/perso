@@ -6,7 +6,6 @@ class ShopController
     {
     	$productShop = new ShopModel();
 		$product = $productShop->getProductDetail();
-
 		return [
 			'product' => $product
         ];

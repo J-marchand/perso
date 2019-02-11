@@ -6,5 +6,5 @@
 
 
 $config['dsn']      = 'mysql:host=localhost;dbname=gyac';
-$config['password'] = '';
+$config['password'] = 'troiswa';
 $config['user']     = 'root';

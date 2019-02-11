@@ -1,14 +1,9 @@
 /*** SPACE ***/
-<<<<<<< HEAD
-
-
-=======
 .register-space_form
 {
     min-height: 650px;
     width: 100%;
 }
->>>>>>> 5b590c2c4a80b8f2d5f3bc168aefec38c84c7e60
 /*** SPACE FORM ***/
 .register-space
 {
@@ -16,12 +11,7 @@
 }
 
 /*** FORM ***/
-<<<<<<< HEAD
 
-.form_min-height
-{
-    min-height: 100px;
-=======
 .register_form
 {
     width: 70%;
@@ -30,37 +20,20 @@
 {
     border: 2px solid black;  
     border-radius: 5px;
-    min-height: 550px;  
->>>>>>> 5b590c2c4a80b8f2d5f3bc168aefec38c84c7e60
+    min-height: 570px;  
 }
 
 /*** LEFT ***/
 .left
 {
     width: 30%;
-<<<<<<< HEAD
-    filter: invert(1);
-}
-.left img
-{
-    width: 100%;
-    padding: 0 auto;
-}
-/*** RIGHT ***/
-.right
-{
-    width: 70%;
-}
-/* STEP 1 */
 
-/* STEP 2 */
-/* STEP 3 */
-=======
     margin: auto 0;
 }
 .left img
 {
     width: 100%; 
+    filter: invert(1);
 }
 .left a
 {
@@ -77,5 +50,45 @@
 {
     min-height: 100%;
 }
+
+.radio_register
+{
+    margin-bottom: 50px;
+}
+
+.inputmail input
+{
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+    padding: 7px 5px;
+}
+
+.register-space_form_step-one a
+{
+    display: block;
+
+    width: 35%;
+    margin: 50px auto;
+}
 /* STEP 2 */
->>>>>>> 5b590c2c4a80b8f2d5f3bc168aefec38c84c7e60
+.register-space_form_step-two button
+{
+    display: block;
+
+    width: 35%;
+    margin: 0 0 0 auto;
+}
+.inputlabel
+{
+    display: block;
+    margin: 20px auto;
+}
+
+.inputlabel input
+{
+    width: 100%;
+    padding: 7px 5px;
+
+    display: block;
+}

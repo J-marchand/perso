@@ -3,28 +3,50 @@
 <div class="container">
     <div class="shop_space fl-jc-b">
         <div class="shop_product">
-            
-        <?php  
-                $i = 0;
-                ?>
-            <?php foreach($product as $products): 
-                $i++;
-                ?>
-                <div class="product p-20">
-                    <h2 id="product_name"><?= $products['name_product'] ?></h2>
-                    <img id="product_img"src="<?= $wwwUrl ?>/images/shop/<?= $products['img_product'] ?>" alt="">
-                    <p id="product_about"><?= $products['about_product'] ?></p>
+            <?php foreach($product as $products): ?>
+                <div class="product p-20" id="<?= $products['id'] ?>">
+                    <h2 class="product_name"><?= $products['name_product'] ?></h2>
+                    <img class="product_img" src="<?= $wwwUrl ?>/images/shop/man-min/casquette.jpg" alt="" data-info="<?=$products['img_product']?>">
+                    <p class="product_detail"><?= $products['about_product'] ?></p>
                     <div class="product_about">
-                        <p id="product_price">Prix : <strong><?= $products['price_product'] ?>€</strong></p>
-                        <p><strong><?= $products['quantity_product'] ?></strong> en stock</p>
+                        <p class="product_price">Prix : <strong><?= $products['price_product'] ?></strong>€</p>
+                        <p class="quantity_product"><strong><?= $products['quantity_product'] ?></strong> en stock</p>
                     </div>
-                    <a class="addProduct" href="">ajouter au panier</a>
-                    <button onclick="clickTest(<?= $i ?>)" class="addProduct">ajouter au panier</button>
+                    <button data-id="<?= $products['id'] ?>" class="addProduct">ajouter au panier</button>
                 </div>
             <?php endforeach ?>
         </div>
         <div class="shop_about">
+            <div class="basket p-20">
+                <h2>Mon panier</h2>
+                <div class="basket_detail">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td class="first_td">Produits</td>
+                                <td class="second_td">Prix</td>
+                                <td class="third_td">Quantité</td>
+                            </tr>                            
+                        </thead>
+                        <tbody id="basket">
+                            
+                            <!-- <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Prix TTC</td>
+                            </tr> -->
+                        </tbody>
+                        <tfoot>    
+                            <tr class="ud-p-20">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                        
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-<script src="<?= $wwwUrl ?>/js/classes/Json.class.js"></script>
+<script src="<?= $wwwUrl ?>/js/classes/Basket.class.js"></script>

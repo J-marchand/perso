@@ -14,8 +14,8 @@
 /*** PRODUCT ***/
 .product
 {
-    margin: 0 20px 20px 20px;
-    width: 29%;
+    margin: 0 20px 20px 0;
+    width: 30%;
     text-align: center;
 
     border: 2px black solid;
@@ -23,6 +23,7 @@
 .product img
 {
     width: 70%;
+    image-rendering: auto;
 }
 
 .product p
@@ -40,5 +41,31 @@
 .shop_about
 {
     width: 30%;
-    border: 2px black solid;
+    border: 2px black solid;  
 }
+
+.basket_detail table
+{
+    width: 100%;
+}
+
+.basket_detail tr
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.first_td
+{
+    min-width: 70%;
+}
+
+.second_td,
+.third_td
+{
+    text-align: left;
+    width: 100%;
+}
+
+
