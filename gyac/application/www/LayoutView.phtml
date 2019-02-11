@@ -9,6 +9,10 @@
 
     <!-- Feuilles de styles de l'application -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Karla">
+<<<<<<< HEAD
+=======
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+>>>>>>> 5b590c2c4a80b8f2d5f3bc168aefec38c84c7e60
 
     <!-- Feuilles de styles d'auto-class -->
     <link rel="stylesheet" href="<?= $wwwUrl ?>/css/auto-class.css">
@@ -29,7 +33,11 @@
                 <div class="layout_header_bloc_left">
                     <ul class="layout_header_bloc_left_list">
                         <li><a class=" normal-list normal-link p-20" href="<?= $requestUrl ?>/">Give You A Chance</a></li>
+<<<<<<< HEAD
                         <li><a class ="uppercase normal-list normal-link p-20" href="">boutique</a></li>
+=======
+                        <li><a class ="uppercase normal-list normal-link p-20" href="<?= $requestUrl ?>/shop">boutique</a></li>
+>>>>>>> 5b590c2c4a80b8f2d5f3bc168aefec38c84c7e60
                         <li><a class ="uppercase normal-list normal-link p-20" href="">contact</a></li>
                     </ul>
                 </div>
@@ -37,6 +45,7 @@
                 <div class="layout_header_bloc_right">
                     <ul class="layout_header_bloc_right_list">
 
+<<<<<<< HEAD
                         
                             <li><a class ="uppercase normal-list normal-link p-20" href="">connexion</a></li>
                             <li><a class ="uppercase normal-list normal-link p-20" href="<?= $requestUrl ?>/user/register">inscription</a></li>
@@ -44,6 +53,15 @@
                         
                             <li><a class ="uppercase normal-list normal-link p-20" href="">deconnexion</a></li>
                         
+=======
+                        <?php if($_SESSION == false): ?>
+                            <li><a class ="uppercase normal-list normal-link p-20" href="<?= $requestUrl ?>/user/login">connexion</a></li>
+                            <li><a class ="uppercase normal-list normal-link p-20" href="<?= $requestUrl ?>/user/register">inscription</a></li>
+                        <?php endif ?>
+                        <?php if($_SESSION == true): ?>
+                            <li><a class ="uppercase normal-list normal-link p-20" href="<?= $requestUrl ?>/user/destroy">deconnexion</a></li>
+                        <?php endif ?>
+>>>>>>> 5b590c2c4a80b8f2d5f3bc168aefec38c84c7e60
                     </ul>
                 </div>
             </nav>

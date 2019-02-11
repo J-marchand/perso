@@ -2,26 +2,60 @@
 
 <div class="container">
     <div class="register-space bg-c-black">
-        <div class="register-space_form">
-            <form action="<?= $requestUrl ?>/application/controller/user/register">
-                <div class="left">
-                    <img src="<?= $wwwUrl ?>/images/form/bodybuild.png" alt="">
-                </div>
-                <div class="right">
-                    <div class="form_min-height">                    
-                        <div class="register-space_form_step-one bg-c-white">
-                        </div>
+
+        <div class="register-space_form fl-jc-b">            
+            <div class="left">
+                <img src="<?= $wwwUrl ?>/images/form/bodybuild.png" alt="">
+                <a class="uppercase normal-link c-white t-a-center ud-p-20" href="">connexion</a>
+            </div>
+            <form class="register_form p-20" action="<?= $requestUrl ?>/user/register" method="POST">
+                <div class="right bg-c-white">
+                    <div id="first_fieldset" class="form_min-height p-20">
+                        <fieldset>  
+                            <legend class="uppercase">étape 1</legend>                  
+                            <div class="register-space_form_step-one form p-50">
+                                <h2>Je veux :</h2>
+                                <div class="inputGroup">
+                                    <input id="radio1" name="radio" type="radio" value="student"/>
+                                    <label class="uppercase">faire du sport</label>
+                                </div>
+                                <div class="inputGroup">
+                                    <input id="radio2" name="radio" type="radio" value="teacher"/>
+                                    <label class="uppercase">donner un cours</label>
+                                </div>
+                                <div class="inputgroup">
+                                    <label>Votre adresse mail</label>
+                                    <input id="mail" name="mail" type="mail">
+                                </div>
+                            </div>
+                            <a id="subscribe_do-move" class="uppercase normal-link" href="">suivant</a>
+                        </fieldset>
                     </div>
-                    <div class="form_min-height">                
-                        <div class="register-space_form_step-two d-show bg-c-white">                    
-                        </div>
-                    </div>
-                    <div class="form_min-height">
-                        <div class="register-space_form_step-three d-show bg-c-white">                    
-                        </div>
+                    <div id="second_fieldset" class="form_min-height p-20 d-show"> 
+                        <fieldset>  
+                            <legend class="uppercase">étape 2</legend>               
+                            <div class="register-space_form_step-two bg-c-white">
+                                <div class="inputgroup">                    
+                                    <label>Prénom</label>
+                                    <input type="text" name="firstName" id="firstName">
+                                </div>
+                                <div class="inputgroup"> 
+                                    <label>Nom</label>
+                                    <input type="text" name="lastName" id="lastName">
+                                <div class="inputgroup">
+                                    <label>Choisissez un mot de passe</label>
+                                    <input id="password" name="password" type="password">
+                                </div>
+                                <button class="uppercase" type="submit">valider</button>
+                            </div>
+                            <a class="normal-link" id="come_back" href=""><i class="fas fa-arrow-left"></i></a>
+                        </fieldset>
                     </div>
                 </div>
             </form>
         </div>
     </div>
+
 </div>
+
+<script src="<?= $wwwUrl ?>/js/RegisterAnimation.js"></script>

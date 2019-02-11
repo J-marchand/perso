@@ -1,0 +1,44 @@
+/*** SPACE_SHOP ***/
+.shop_space
+{
+    margin: 20px 0;
+}
+/*** SHOP_PRODUCT ***/
+.shop_product
+{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*** PRODUCT ***/
+.product
+{
+    margin: 0 20px 20px 20px;
+    width: 29%;
+    text-align: center;
+
+    border: 2px black solid;
+}
+.product img
+{
+    width: 70%;
+}
+
+.product p
+{
+    width: 100%;
+}
+/* PRODUCT_ABOUT */
+.product_about
+{
+    margin-top: 20px;
+    text-align: right;
+}
+
+/*** SHOP_ABOUT ***/
+.shop_about
+{
+    width: 30%;
+    border: 2px black solid;
+}

@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="<?= $wwwUrl ?>/css/shop.css">
+
+<div class="container">
+    <div class="shop_space fl-jc-b">
+        <div class="shop_product">
+            
+        <?php  
+                $i = 0;
+                ?>
+            <?php foreach($product as $products): 
+                $i++;
+                ?>
+                <div class="product p-20">
+                    <h2 id="product_name"><?= $products['name_product'] ?></h2>
+                    <img id="product_img"src="<?= $wwwUrl ?>/images/shop/<?= $products['img_product'] ?>" alt="">
+                    <p id="product_about"><?= $products['about_product'] ?></p>
+                    <div class="product_about">
+                        <p id="product_price">Prix : <strong><?= $products['price_product'] ?>€</strong></p>
+                        <p><strong><?= $products['quantity_product'] ?></strong> en stock</p>
+                    </div>
+                    <a class="addProduct" href="">ajouter au panier</a>
+                    <button onclick="clickTest(<?= $i ?>)" class="addProduct">ajouter au panier</button>
+                </div>
+            <?php endforeach ?>
+        </div>
+        <div class="shop_about">
+        </div>
+    </div>
+</div>
+<script src="<?= $wwwUrl ?>/js/classes/Json.class.js"></script>

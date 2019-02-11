@@ -1,6 +1,14 @@
 /*** SPACE ***/
+<<<<<<< HEAD
 
 
+=======
+.register-space_form
+{
+    min-height: 650px;
+    width: 100%;
+}
+>>>>>>> 5b590c2c4a80b8f2d5f3bc168aefec38c84c7e60
 /*** SPACE FORM ***/
 .register-space
 {
@@ -8,16 +16,29 @@
 }
 
 /*** FORM ***/
+<<<<<<< HEAD
 
 .form_min-height
 {
     min-height: 100px;
+=======
+.register_form
+{
+    width: 70%;
+}
+.register_form fieldset
+{
+    border: 2px solid black;  
+    border-radius: 5px;
+    min-height: 550px;  
+>>>>>>> 5b590c2c4a80b8f2d5f3bc168aefec38c84c7e60
 }
 
 /*** LEFT ***/
 .left
 {
     width: 30%;
+<<<<<<< HEAD
     filter: invert(1);
 }
 .left img
@@ -34,3 +55,27 @@
 
 /* STEP 2 */
 /* STEP 3 */
+=======
+    margin: auto 0;
+}
+.left img
+{
+    width: 100%; 
+}
+.left a
+{
+    display: block;
+
+    width: 40%;
+    margin: 50px auto;
+
+    border: 2px solid white;
+}
+/*** RIGHT ***/
+/* STEP 1 */
+.register-space_form_step-one
+{
+    min-height: 100%;
+}
+/* STEP 2 */
+>>>>>>> 5b590c2c4a80b8f2d5f3bc168aefec38c84c7e60
