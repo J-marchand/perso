@@ -44,6 +44,11 @@
     border: 2px black solid;  
 }
 
+.basket
+{
+    position: sticky;
+    top: 0;
+}
 .basket_detail table
 {
     width: 100%;
@@ -56,15 +61,26 @@
     width: 100%;
 }
 
+.basket_detail button
+{
+    border :none;
+}
+
 .first_td
 {
-    min-width: 70%;
+    min-width: 60%;
 }
 
 .second_td,
 .third_td
+fourth_td
 {
     text-align: left;
+    width: 10%;
+}
+
+.third_td select
+{
     width: 100%;
 }
 

@@ -1,0 +1,94 @@
+<link rel="stylesheet" href="<?= $wwwUrl ?>/css/recap.css">
+<link rel="stylesheet" href="<?= $wwwUrl ?>/css/stripe.css">
+
+<div class="container">
+    <div class="space_payment bg-c-black">
+        <div class="space_payment_top bg-c-white">
+        <h1>Recapitulatif de votre commande</h1>
+            <div class="fl-jc-b">
+                <div class="recap_info_left">                
+                    <h2>Nom et prenom</h2>
+                    <p><?= $_SESSION['lastName'] ?> <?= $_SESSION['firstName'] ?></p>
+                    <h2>Adresse</h2>
+
+                    <?php if ($_SESSION['address'] == null): ?>
+                        <a href="">Complétez vos informations</a>
+                    <?php elseif($_SESSION['address'] == true): ?>
+                        <p><?= $_SESSION['address'] ?></p>
+                    <?php endif ?>
+
+                    <h2>Ville</h2>
+
+                    <?php if($_SESSION['city'] == null): ?>
+                        <a href="">Complétez vos informations</a>
+                    <?php elseif($_SESSION['city'] == true): ?>
+                        <p><?= $_SESSION['city'] ?></p>
+                    <?php endif ?>
+
+                    <?php if($_SESSION['zipCode'] == true): ?>
+                        <p><?= $_SESSION['zipCode'] ?></p>
+                    <?php endif ?>
+
+                    <h2>Coordonée</h2>
+                    <p><?= $_SESSION['email'] ?></p>
+
+                    <?php if($_SESSION['phone'] == null): ?>
+                        <a href="">Complétez vos informations</a>
+                    <?php elseif($_SESSION['phone'] == true): ?>
+                        <p><?= $_SESSION['phone'] ?></p>
+                    <?php endif ?>
+                </div>
+                <div class="recap_info_right">
+                    <table>
+                            <thead>
+                                <tr class="">
+                                    <td><h2>Produits</h2></td>
+                                    <td><h2>Quantité</h2></td>
+                                    <td><h2>Prix</h2></td>
+                                </tr>                            
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                            <tfoot>    
+                                <tr class="ud-p-20">
+                                    
+                                </tr>                        
+                            </tfoot>
+                    </table>
+                </div> 
+            </div>           
+        </div>
+        <div class="space_payment_middle">
+        <h2 class="">Intro to react course price <?= $totalAmount ?> €</h2>
+			<form action="<?= $requestUrl ?>/shop/success" method="post" id="payment-form">
+			    <div class="">
+                    <input type="text" class="StripeElement StripeElemen--empty" placeHolder="Prénom" name="first_name">
+
+                    <input type="text" class="form-control mb-3 StripeElement StripeElemen--empty" placeHolder="Nom" name="last_name">
+
+                    <input type="email" class="form-control mb-3 StripeElement StripeElemen--empty" placeHolder="Email" name="email">
+
+                    <div id="card-element" class="form-control ">
+                    <!-- A Stripe Element will be inserted here. -->
+                    </div>
+
+                    <!-- Used to display form errors. -->
+                    <div id="card-errors" role="alert"></div>
+			    </div>
+
+			    <button type="submit">Payer</button>
+			</form>
+		</div>
+
+		
+        
+        </div>
+        <div class="space_payment_bottom">
+                
+        </div>        
+    </div>
+</div>
+<script src="https://js.stripe.com/v3/"></script>
+<script src="<?= $wwwUrl ?>/js/classes/Recap.class.js"></script>
+<script src="<?= $wwwUrl ?>/js/charge.js"></script>

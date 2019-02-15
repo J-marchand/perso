@@ -15,6 +15,7 @@
                     <button data-id="<?= $products['id'] ?>" class="addProduct">ajouter au panier</button>
                 </div>
             <?php endforeach ?>
+
         </div>
         <div class="shop_about">
             <div class="basket p-20">
@@ -26,24 +27,22 @@
                                 <td class="first_td">Produits</td>
                                 <td class="second_td">Prix</td>
                                 <td class="third_td">Quantité</td>
+                                <td></td>
                             </tr>                            
                         </thead>
                         <tbody id="basket">
                             
-                            <!-- <tr>
-                                <td></td>
-                                <td></td>
-                                <td>Prix TTC</td>
-                            </tr> -->
                         </tbody>
                         <tfoot>    
                             <tr class="ud-p-20">
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
                             </tr>                        
                         </tfoot>
                     </table>
+                    <a href="<?= $requestUrl ?>/shop/validate" class="uppercase p-10 bg-c-black c-white">acheter</a>
                 </div>
             </div>
         </div>

@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="<?= $wwwUrl ?>/css/validate.css">
+
+<div class="container">
+    <div class="space_validate bg-c-black p-20">
+        <div class="show_validate bg-c-white p-20">
+            <h2 class="uppercase">mon panier</h2>
+            <h3 class="ud-p-20">Mes articles</h3>
+
+            <div class="show_validate_basket ud-p-50">
+                <table>
+                    <thead>
+                        <tr>
+                            <td class="uppercase bold">Photo du produit</td>
+                            <td class="uppercase bold">Nom du produit</td>
+                            <td class="uppercase bold">Prix unitaire</td>
+                            <td class="uppercase bold">Quantité</td>
+                            <td class="uppercase bold">Prix total</td>
+                            <td class="uppercase bold"></td>
+                        </tr>
+                    </thead> 
+                    <tbody id="show_validate_product">
+                    </tbody>
+                    <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="bold">Prix total</td>
+                            <td></td>
+                           
+                    </tr>
+                    <tfoot id="show_total_product">
+                        
+
+                    </tfoot>
+                    
+                </table>
+
+                
+                <form action="<?= $requestUrl ?>/shop/payment" method="POST">
+                    <input type="hidden" name="totalOrder" value="" id="totalOrder"/>
+                    <button type="submit" class="uppercase p-10 bg-c-black c-white t-a-center normal-link">passer commande</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="<?= $wwwUrl ?>/js/classes/Basket.class.js"></script>
+<script src="<?= $wwwUrl ?>/js/classes/Validate.class.js"></script>

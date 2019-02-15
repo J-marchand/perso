@@ -1,0 +1,30 @@
+/*** SPACE VALIDATE ***/
+.space_validate
+{
+    margin-top: 50px;
+    border: 2px black solid;
+}
+/*** SHOW VALIDATE ***/
+.show_validate
+{
+    border: 2px black solid;
+}
+
+/** BASKET **/
+.show_validate_basket table
+{
+    width: 100%;
+}
+.show_validate_basket img
+{
+    width: 40%;
+}
+
+.show_validate_basket button
+{
+    display: block;
+
+    width: 20%;
+    margin: 50px 0 0 auto;
+}
+/** PRODUCT **/
